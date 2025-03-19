@@ -1,0 +1,30 @@
+.messages-container {
+    padding: 20px;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .message-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .message-table th,
+  .message-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .message-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .no-messages {
+    text-align: center;
+    color: gray;
+  }
+  

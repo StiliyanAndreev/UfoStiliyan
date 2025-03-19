@@ -1,0 +1,19 @@
+.rules-box {
+  padding: 20px;
+  background-color: #f0f8ff; 
+  border: 2px solid #007bff; 
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
+  font-size: 1rem;
+}
+
+.rules-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.rules-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  line-height: 1.6;
+}

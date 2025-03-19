@@ -1,0 +1,77 @@
+/* General Container Styling */
+.records-container {
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Title */
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* General Table Styling */
+.score-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.score-table thead tr {
+  background-color: #ff9800; /* Updated to Orange */
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.score-table th,
+.score-table td {
+  padding: 12px 15px;
+}
+
+.score-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.score-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.score-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.score-table tbody tr.odd-row {
+  background-color: #ffe6cc; 
+}
+
+
+@media (max-width: 768px) {
+  .score-table {
+    font-size: 14px;
+  }
+
+  .score-table th,
+  .score-table td {
+    padding: 10px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+}

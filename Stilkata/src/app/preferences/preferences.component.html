@@ -1,0 +1,76 @@
+<div class="container d-flex justify-content-center align-items-center vh-100">
+  <div class="preferences-card">
+    <div class="text-center mb-4">
+      <img
+        ngSrc="assets/images/LogoPoliMadrid.jpg"
+        alt="University Logo"
+        class="logo"
+        width="100"
+        height="100"
+      />
+      <h1>Preferences</h1>
+    </div>
+    <form #preferencesForm="ngForm">
+      <div class="mb-4">
+        <label for="ufo" class="form-label"><strong>Number of UFOs:</strong></label>
+        <select
+          id="ufo"
+          class="form-select"
+          name="ufoCount"
+          [(ngModel)]="preferences.ufoCount"
+          required
+        >
+          <option *ngFor="let count of [1, 2, 3, 4, 5]" [value]="count">{{ count }}</option>
+        </select>
+      </div>
+      <div class="mb-4">
+        <label for="time" class="form-label"><strong>Time (seconds):</strong></label>
+        <select
+          id="time"
+          class="form-select"
+          name="gameTime"
+          [(ngModel)]="preferences.gameTime"
+          required
+        >
+          <option *ngFor="let time of [60, 120, 180]" [value]="time">{{ time }}</option>
+        </select>
+      </div>
+      <div class="d-grid gap-2">
+        <button
+          type="button"
+          class="btn btn-primary"
+          (click)="savePreferencesLocally()"
+          [disabled]="!preferencesForm.valid"
+        >
+          Save Locally
+        </button>
+        <button
+          *ngIf="isLoggedIn"
+          type="button"
+          class="btn btn-success"
+          (click)="savePreferencesToServer()"
+        >
+          Save to Server
+        </button>
+        <button
+          *ngIf="isLoggedIn"
+          type="button"
+          class="btn btn-info"
+          (click)="loadPreferencesFromServer()"
+        >
+          Load from Server
+        </button>
+      </div>
+    </form>
+    <div class="rules-box mt-4">
+      <h3 class="text-primary text-center">Instructions</h3>
+      <ul>
+        <li>Destroy as many UFOs as you can to earn points.</li>
+        <li>Every missed attempt reduces your score by 25 points.</li>
+        <li>You can adjust the game duration and UFO quantity in the settings above.</li>
+        <li>UFO impacts are automatically detected during the game.</li>
+        <li>Your final score is calculated based on your accuracy and the time left.</li>
+      </ul>
+    </div>
+  </div>
+</div>

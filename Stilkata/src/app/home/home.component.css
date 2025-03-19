@@ -1,0 +1,86 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffe4e1;
+}
+
+
+.homepage {
+  background-color: #ffe4e1;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; 
+  overflow: hidden;
+}
+
+
+.ufo {
+  position: absolute;
+  width: 80px;
+  animation: float 3s infinite ease-in-out;
+  z-index: 10;
+}
+
+
+.ufo-1 {
+  top: 10%;
+  left: 15%;
+  animation-delay: 0s;
+}
+
+.ufo-2 {
+  top: 20%;
+  right: 20%;
+  animation-delay: 0.5s;
+}
+
+.ufo-3 {
+  bottom: 15%;
+  left: 30%;
+  animation-delay: 1s;
+}
+
+.ufo-4 {
+  bottom: 10%;
+  right: 15%;
+  animation-delay: 1.5s;
+}
+
+.ufo-5 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 2s;
+}
+
+/* Animation for floating effect */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+
+.slide-image {
+  max-width: 60%;
+  height: auto;
+  border: 2px solid #333;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+
+.welcome-text {
+  margin-top: 20px;
+  color: #333;
+  text-align: center;
+  z-index: 2;
+}

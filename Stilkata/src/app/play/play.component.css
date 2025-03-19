@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+.game-area {
+  position: relative;
+  width: 1200px; /* Adjusted game size */
+  height: 800px;
+  margin: 40px auto;
+  overflow: visible;
+}
+
+#gameCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+}
+
+.info-panel {
+  z-index: 10;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: red; 
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.ufo {
+  width: 100px; 
+  height: auto;
+}

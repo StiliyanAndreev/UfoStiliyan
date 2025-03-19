@@ -1,0 +1,32 @@
+/* Adjusting the logo size */
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+/* Adjusting the navigation links */
+.navbar-nav {
+  display: flex;
+  gap: 15px; /* Space between links */
+}
+
+/* Ensuring alignment of elements */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Ensure the nav links are aligned to the left */
+.collapse.navbar-collapse {
+  justify-content: start;
+}
+
+/* Adjust the spacing for login/logout links */
+.ms-auto {
+  margin-left: auto;
+}
+
+/* Optional: Change hover effect for nav links */
+.nav-link:hover {
+  text-decoration: underline;
+}
